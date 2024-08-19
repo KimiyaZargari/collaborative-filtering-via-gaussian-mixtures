@@ -104,7 +104,7 @@ def run(X: np.ndarray, mixture: GaussianMixture,
         post, log_likelihood = estep(X, mixture)
         
         # M-step: Update the mixture parameters
-        mixture = mstep(X, post)
+        mixture = mstep(X, post,mixture)
         
         # Check for convergence based on the specified criterion
         if prev_log_likelihood is not None:

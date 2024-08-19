@@ -80,7 +80,7 @@ def plot(X: np.ndarray, mixture: GaussianMixture, post: np.ndarray,
         ax.text(mu[0], mu[1], legend)
     plt.axis('equal')
     plt.savefig(plt_filename) 
-    plt.show()
+    #plt.show()
 
 
 def rmse(X, Y):
